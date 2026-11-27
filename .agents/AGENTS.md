@@ -1,4 +1,4 @@
-# AGENTS.md — Quy định làm việc cho project
+# AGENTS.md — Quy định làm việc chung
 
 Tài liệu này nằm trong `.agents/AGENTS.md` để định hướng chung khi làm việc với repository. Toàn bộ cấu hình dự án được quản lý tập trung tại `.cline/`, còn MCP được quản lý tập trung tại `.mcp/`.
 
