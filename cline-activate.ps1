@@ -1,12 +1,13 @@
 # Get the root directory of the project (where this activate.ps1 script is located)
 $ProjectRoot = if ($PSScriptRoot) { $PSScriptRoot } else { (Get-Location).Path }
 
+$ProjectClineDataDir = Join-Path $ProjectRoot ".cline_data"
 $ProjectClineDir = Join-Path $ProjectRoot ".cline"
 $ProjectMcpDir   = Join-Path $ProjectRoot ".mcp"
-$McpSettingsPath = Join-Path $ProjectMcpDir "mcp_config.json"
+$McpSettingsPath = Join-Path $ProjectMcpDir "mcp_settings.json"
 
 # Configure environment variables: Global data, project-specific config & MCP settings
-$env:CLINE_DATA_DIR          = Join-Path $env:USERPROFILE ".cline\data"
+$env:CLINE_DATA_DIR          = $ProjectClineDataDir
 $env:CLINE_DIR               = $ProjectClineDir
 $env:CLINE_MCP_SETTINGS_PATH = $McpSettingsPath
 
