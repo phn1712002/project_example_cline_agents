@@ -1,2 +1,5 @@
 
+.env
+
+# MCP Server Config
 .mcp/mcp_config.json
